@@ -30,7 +30,7 @@
     </a>
     <nav class="top__nav">
       <a href="#business">Роли</a>
-      <a href="#platform">Что внутри</a>
+      <a href="#screens">Приложение</a>
       <a href="#pricing">Тарифы</a>
       <a href="#faq">Вопросы</a>
       <a href="index.html" class="top__switch">Для себя →</a>
@@ -251,6 +251,81 @@
   </div>
 </section>
 
+<!-- ─── Экраны приложения для бизнеса ─── -->
+<section class="section section--alt" id="screens">
+  <div class="wrap">
+    <div class="section__head">
+      <div><span class="kicker">Приложение</span><h2>Всё управление — в одном окне</h2></div>
+      <p class="muted">Включаете роль, правите сценарий на холсте и видите каждый звонок и заявку. Экраны предварительные.</p>
+    </div>
+    <div class="shots">
+      <figure class="shot shot--wide">
+        <div class="win">
+          <div class="win__bar"><i></i><i></i><i></i><span>TylerAgent — Запись по звонку</span></div>
+          <div class="win__body editor">
+            <aside class="editor__palette">
+              <b>Старт</b><span>📞 Звонок</span><span>✈️ Telegram</span><span>🟦 ВКонтакте</span>
+              <b>ИИ</b><span>🧠 Нейросеть</span><span>🔀 Намерение</span><span>✨ Извлечь поля</span>
+              <b>Данные</b><span>🗓 Запись</span><span>📊 Таблица</span><span>🔌 CRM</span>
+            </aside>
+            <div class="editor__canvas">
+              <svg viewBox="0 0 420 260" aria-hidden="true">
+                <g fill="none" stroke="#c6f432" stroke-width="2">
+                  <path d="M118 52 C 160 52, 150 120, 190 120"/><path d="M302 120 C 340 120, 330 200, 290 200 C 250 200, 250 210, 222 210"/>
+                  <path d="M118 210 C 140 210, 140 236, 160 236" stroke="#3a4766"/>
+                </g>
+                <g font-family="Manrope, sans-serif" font-size="11" fill="#eef1f7">
+                  <rect x="14" y="30" width="104" height="44" rx="9" fill="#141a28" stroke="#263046"/><rect x="14" y="30" width="104" height="16" rx="9" fill="#2b2340"/><text x="24" y="42" font-weight="700">📞 Звонок</text><text x="24" y="62" fill="#98a2b8" font-size="9">«Салон Локон…»</text>
+                  <rect x="190" y="98" width="112" height="44" rx="9" fill="#141a28" stroke="#c6f432"/><rect x="190" y="98" width="112" height="16" rx="9" fill="#1f2a44"/><text x="200" y="110" font-weight="700">✨ Извлечь поля</text><text x="200" y="130" fill="#98a2b8" font-size="9">имя · услуга · время</text>
+                  <rect x="118" y="188" width="104" height="44" rx="9" fill="#141a28" stroke="#263046"/><rect x="118" y="188" width="104" height="16" rx="9" fill="#1d3326"/><text x="128" y="200" font-weight="700">🗓 Запись</text><text x="128" y="220" fill="#6ee7a8" font-size="9">✓ 15:00 свободно</text>
+                  <rect x="14" y="188" width="104" height="44" rx="9" fill="#141a28" stroke="#263046" opacity=".5"/><text x="24" y="214" fill="#98a2b8">📊 Таблица</text>
+                </g>
+              </svg>
+            </div>
+            <aside class="editor__inspector">
+              <b>✨ Извлечь поля</b>
+              <label>Поля<span>name, service, datetime</span></label>
+              <label>Модель<span>GPT-4o-mini ▾</span></label>
+              <label>Выходы<span class="pills"><i>json</i><i>missing</i></span></label>
+              <div class="editor__run">▶ Тест</div>
+            </aside>
+          </div>
+        </div>
+        <figcaption>Холст: сценарий агента из блоков и проводов</figcaption>
+      </figure>
+
+      <figure class="shot">
+        <div class="win win--tall">
+          <div class="win__bar"><i></i><i></i><i></i><span>Журнал</span></div>
+          <div class="win__body journal">
+            <div class="tiles"><div><b>128</b>звонков</div><div><b>46</b>записей</div><div><b>0</b>пропущено</div></div>
+            <div class="row"><span>14:32</span><span>+7 912 •••-45-10</span><em class="ok">Записан</em></div>
+            <div class="row"><span>14:05</span><span>@maria_k</span><em class="ok">Заказ</em></div>
+            <div class="row"><span>13:47</span><span>+7 903 •••-02-77</span><em>Вопрос</em></div>
+            <div class="row"><span>13:12</span><span>ВКонтакте</span><em class="warn">Оператор</em></div>
+            <div class="row"><span>12:58</span><span>+7 921 •••-61-33</span><em class="ok">Записан</em></div>
+          </div>
+        </div>
+        <figcaption>Журнал звонков и заявок в реальном времени</figcaption>
+      </figure>
+
+      <figure class="shot">
+        <div class="win win--tall">
+          <div class="win__bar"><i></i><i></i><i></i><span>Роли</span></div>
+          <div class="win__body roles">
+            <div class="role is-on"><span>📞</span><b>Администратор на телефоне</b><i class="toggle"></i></div>
+            <div class="role is-on"><span>🔔</span><b>Напоминания</b><i class="toggle"></i></div>
+            <div class="role"><span>🎯</span><b>Менеджер по заявкам</b><i class="toggle"></i></div>
+            <div class="role is-on"><span>⭐</span><b>Ответы на отзывы</b><i class="toggle"></i></div>
+            <div class="role"><span>🧮</span><b>Сметы и КП</b><i class="toggle"></i></div>
+          </div>
+        </div>
+        <figcaption>Роли включаются одним переключателем</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <!-- ─── Платформа ─── -->
 <section class="section" id="platform">
   <div class="wrap">
@@ -280,18 +355,24 @@
     <p class="early">🎁 Оставьте предзаказ до 11 ноября — <b>первые 3 месяца за полцены</b> на любом платном тарифе.
       <span class="muted">Цены и лимиты предварительные и могут уточниться к запуску.</span></p>
 
-        <div class="plans">
+    <div class="plans plans--4">
+      <div class="plan">
+        <h4>Мини</h4>
+        <div class="price" data-month="2990">2 990 ₽</div>
+        <ul><li>1 роль: бот или телефон</li><li>5 000 сообщений</li><li>100 минут звонков и номер</li><li>Для салона, мастерской, кафе</li></ul>
+        <a class="btn btn--ghost" href="#preorder" data-plan="mini">Предзаказ</a>
+      </div>
       <div class="plan plan--hot">
         <span class="plan__badge">Популярный</span>
         <h4>Бизнес</h4>
-        <div class="price" data-month="4990">4 990 ₽</div>
-        <ul><li>Все 15 шаблонов</li><li>50 000 сообщений</li><li>500 минут ИИ-оператора и номер</li><li>3 сотрудника, оплата по счёту</li></ul>
+        <div class="price" data-month="6990">6 990 ₽</div>
+        <ul><li>Все 15 ролей</li><li>20 000 сообщений</li><li>300 минут ИИ-оператора и номер</li><li>3 сотрудника, оплата по счёту</li></ul>
         <a class="btn" href="#preorder" data-plan="business">Предзаказ</a>
       </div>
       <div class="plan">
         <h4>Команда</h4>
-        <div class="price" data-month="14990">14 990 ₽</div>
-        <ul><li>200 000 сообщений</li><li>3 000 минут, 5 номеров</li><li>Исходящие обзвоны</li><li>10 сотрудников, приоритет</li></ul>
+        <div class="price" data-month="19990">19 990 ₽</div>
+        <ul><li>60 000 сообщений</li><li>1 000 минут, 3 номера</li><li>Исходящие обзвоны</li><li>10 сотрудников, приоритет</li></ul>
         <a class="btn btn--ghost" href="#preorder" data-plan="team">Предзаказ</a>
       </div>
       <div class="plan">
@@ -435,10 +516,11 @@
           <select name="plan">
             <option value="">Пока не знаю</option>
             <option value="free">Старт — 0 ₽</option>
-            <option value="personal">Личный — 390 ₽</option>
-            <option value="pro">Про — 990 ₽</option>
-            <option value="business">Бизнес — 4 990 ₽</option>
-            <option value="team">Команда — 14 990 ₽</option>
+            <option value="personal">Плюс — 790 ₽</option>
+            <option value="pro">Про — 1 790 ₽</option>
+            <option value="mini">Мини — 2 990 ₽</option>
+            <option value="business">Бизнес — 6 990 ₽</option>
+            <option value="team">Команда — 19 990 ₽</option>
             <option value="enterprise">Под ключ</option>
           </select>
         </label>
@@ -470,7 +552,7 @@
     <div class="thanks" id="thanks" hidden>
       <div class="thanks__ico">✓</div>
       <h3>Заявка принята!</h3>
-      <p>Спасибо, <span id="thanks-name"></span>. Напишем вам до запуска 11 ноября и откроем доступ одними из первых.</p>
+      <p>Спасибо<span id="thanks-name"></span>! Напишем вам до запуска 11 ноября и откроем доступ одними из первых.</p>
     </div>
   </div>
 </section>

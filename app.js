@@ -91,18 +91,27 @@
   const thanks = $("#thanks");
   const errorBox = $(".form__error", form);
 
+  // форма бывает короткой (страница Тайлера) и полной (бизнес) — поля, которых нет, просто пустые
+  const field = (n) => form.elements.namedItem(n);
+  const val = (n) => {
+    const el = field(n);
+    if (!el) return "";
+    return (el instanceof RadioNodeList ? el.value : el.value || "").trim();
+  };
+
   // кнопка тарифа подставляет его в форму
   $$("[data-plan]").forEach((a) => a.addEventListener("click", () => {
-    form.plan.value = a.dataset.plan;
-    const business = ["business", "team", "enterprise"].includes(a.dataset.plan);
+    if (field("plan")) field("plan").value = a.dataset.plan;
+    const business = ["mini", "business", "team", "enterprise"].includes(a.dataset.plan);
     const seg = business ? "company" : (a.dataset.plan === "free" || a.dataset.plan === "personal" ? "personal" : null);
-    if (seg) { form.querySelector(`[name=segment][value=${seg}]`).checked = true; syncSegment(); }
+    const radio = seg && form.querySelector(`[name=segment][value=${seg}]`);
+    if (radio) { radio.checked = true; syncSegment(); }
     goal("plan_click", { plan: a.dataset.plan });
   }));
 
   // «Для себя» — вопросы про помощника, иначе — про компанию
   const syncSegment = () => {
-    const personal = form.segment.value === "personal";
+    const personal = val("segment") === "personal";
     $$("[data-business]", form).forEach((el) => { el.hidden = personal; });
     $$("[data-personal]", form).forEach((el) => { el.hidden = !personal; });
   };
@@ -119,30 +128,30 @@
     showError("");
     $$(".is-bad", form).forEach((el) => el.classList.remove("is-bad"));
 
-    const name = form.name.value.trim();
-    const contact = form.contact.value.trim();
-    if (!name) { form.name.classList.add("is-bad"); form.name.focus(); return showError("Как к вам обращаться?"); }
-    if (!CONTACT.test(contact)) { form.contact.classList.add("is-bad"); form.contact.focus(); return showError("Укажите Telegram (@ник), телефон или почту — чтобы мы могли ответить."); }
-    if (!form.consent.checked) return showError("Нужно согласие на обработку данных.");
-    if (form.website.value) return; // бот заполнил скрытое поле
+    const name = val("name");
+    const contact = val("contact");
+    if (field("name")?.required && !name) { field("name").classList.add("is-bad"); field("name").focus(); return showError("Как к вам обращаться?"); }
+    if (!CONTACT.test(contact)) { field("contact").classList.add("is-bad"); field("contact").focus(); return showError("Укажите Telegram (@ник), телефон или почту — чтобы мы могли ответить."); }
+    if (field("consent") && !field("consent").checked) return showError("Нужно согласие на обработку данных.");
+    if (val("website")) return; // бот заполнил скрытое поле
 
-    const personal = form.segment.value === "personal";
+    const personal = val("segment") === "personal";
     const lead = {
       created_at: new Date().toISOString(),
-      segment: form.segment.value,
+      segment: val("segment"),
       name,
       contact,
-      industry: personal ? "" : form.industry.value,
-      company: personal ? "" : form.company.value.trim(),
-      team: personal ? "" : form.team.value,
-      volume: personal ? "" : form.volume.value,
+      industry: personal ? "" : val("industry"),
+      company: personal ? "" : val("company"),
+      team: personal ? "" : val("team"),
+      volume: personal ? "" : val("volume"),
       // только видимые галочки: при смене «для себя / компания» скрытые не считаем
       tasks: checked("tasks"),
       channels: personal ? "" : checked("channels"),
       current: personal ? checked("current") : "",
-      plan: form.plan.value,
-      when: form.when.value,
-      comment: form.comment.value.trim(),
+      plan: val("plan"),
+      when: val("when"),
+      comment: val("comment"),
       page: location.href.split("#")[0],
       ...flatAttribution(attribution()),
       user_agent: navigator.userAgent,
@@ -156,7 +165,8 @@
       // копия у человека в браузере — пригодится, если он вернётся
       store.set("tyler_lead", { name, at: lead.created_at });
       goal("preorder", { plan: lead.plan, segment: lead.segment });
-      $("#thanks-name").textContent = name;
+      const thanksName = $("#thanks-name");
+      if (thanksName) thanksName.textContent = name ? ", " + name : "";
       form.hidden = true;
       thanks.hidden = false;
       thanks.scrollIntoView({ behavior: "smooth", block: "center" });
