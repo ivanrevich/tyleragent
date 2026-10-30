@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TylerAgent для бизнеса — ИИ-сотрудники за 5 минут</title>
+  <meta name="description" content="Готовые ИИ-сотрудники: звонки, запись клиентов, заявки в CRM, заказы, поддержка, сметы. 15 ролей, оплата по счёту. Запуск 11 ноября.">
+  <meta property="og:title" content="TylerAgent для бизнеса — ИИ-сотрудники за 5 минут">
+  <meta property="og:description" content="Готовые ИИ-сотрудники: звонки, запись клиентов, заявки в CRM, заказы, поддержка, сметы. 15 ролей, оплата по счёту. Запуск 11 ноября.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ─── Полоса: предварительная версия ─── -->
+<div class="notice">
+  <div class="wrap">Запуск <b>11 ноября</b>. Сейчас идёт предзаказ: описание и цены предварительные. <span class="countdown" data-launch="2026-11-11T12:00:00+03:00"></span></div>
+</div>
+
+<!-- ─── Шапка ─── -->
+<header class="top">
+  <div class="wrap top__row">
+    <a class="logo" href="business.html">
+      <img class="logo__mark" src="tyler.svg" alt="">
+      <span>Tyler<i>Agent</i></span>
+    </a>
+    <nav class="top__nav">
+      <a href="#business">Роли</a>
+      <a href="#platform">Что внутри</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#faq">Вопросы</a>
+      <a href="index.html" class="top__switch">Для себя →</a>
+    </nav>
+    <a class="btn btn--small" href="#preorder" data-goal="cta_header">Предзаказ</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ─── Первый экран ─── -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <span class="pill"><span class="dot"></span> TylerAgent для бизнеса · запуск 11 ноября</span>
+      <h1>ИИ&#8209;сотрудники, которые <em>работают&nbsp;24/7</em></h1>
+      <p class="lead">
+        Готовые ИИ-сотрудники отвечают на звонки, записывают клиентов, принимают заказы и ведут продажи
+        в Telegram, VK, MAX и на сайте. Без программистов: выбрали роль, вписали цены и график — работает.
+      </p>
+      <div class="hero__cta">
+        <a class="btn" href="#preorder" data-goal="cta_hero">Оставить предзаказ</a>
+        <a class="btn btn--ghost" href="#business">Готовые сотрудники</a>
+      </div>
+      <ul class="hero__facts">
+        <li><b>15</b> готовых шаблонов</li>
+        <li><b>24/7</b> на звонках и в чатах</li>
+        <li><b>₽</b> оплата картой и по счёту</li>
+      </ul>
+    </div>
+
+    <!-- Холст: так выглядит схема «запись по звонку» -->
+    <div class="hero__canvas" aria-label="Пример схемы: звонок, извлечение данных, запись, таблица">
+      <svg viewBox="0 0 560 440" class="canvas">
+        <defs>
+          <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="1" fill="var(--grid)"/>
+          </pattern>
+        </defs>
+        <rect width="560" height="440" rx="22" fill="var(--ink-1)"/>
+        <rect width="560" height="440" rx="22" fill="url(#grid)"/>
+
+        <g fill="none" stroke-width="2.5">
+          <path class="wire" d="M196 98 C 250 98, 240 196, 300 196"/>
+          <path class="wire wire--live" d="M196 98 C 250 98, 240 196, 300 196"/>
+          <path class="wire" d="M456 196 C 520 196, 500 300, 380 304 C 300 306, 260 300, 236 316"/>
+          <path class="wire wire--live wire--d2" d="M456 196 C 520 196, 500 300, 380 304 C 300 306, 260 300, 236 316"/>
+          <path class="wire" d="M196 352 C 250 352, 260 390, 316 390"/>
+          <path class="wire wire--live wire--d3" d="M196 352 C 250 352, 260 390, 316 390"/>
+        </g>
+
+        <g class="node" transform="translate(36 56)">
+          <rect width="160" height="84" rx="14"/>
+          <rect width="160" height="30" rx="14" class="node__head node__head--trigger"/>
+          <rect y="16" width="160" height="14" class="node__head node__head--trigger"/>
+          <text x="14" y="20" class="node__title">📞 Звонок</text>
+          <text x="14" y="52" class="node__sub">+7 (812) 000-00-00</text>
+          <text x="14" y="70" class="node__sub">«Здравствуйте, салон…»</text>
+          <circle cx="160" cy="42" r="6" class="port"/>
+        </g>
+        <g class="node" transform="translate(300 154)">
+          <rect width="156" height="84" rx="14"/>
+          <rect width="156" height="30" rx="14" class="node__head node__head--ai"/>
+          <rect y="16" width="156" height="14" class="node__head node__head--ai"/>
+          <text x="14" y="20" class="node__title">✨ Извлечь поля</text>
+          <text x="14" y="52" class="node__sub">имя · услуга · время</text>
+          <text x="14" y="70" class="node__sub">модель: GPT-4o</text>
+          <circle cx="0" cy="42" r="6" class="port"/>
+          <circle cx="156" cy="42" r="6" class="port"/>
+        </g>
+        <g class="node" transform="translate(36 290)">
+          <rect width="160" height="84" rx="14"/>
+          <rect width="160" height="30" rx="14" class="node__head node__head--data"/>
+          <rect y="16" width="160" height="14" class="node__head node__head--data"/>
+          <text x="14" y="20" class="node__title">🗓 Запись на время</text>
+          <text x="14" y="52" class="node__sub">10:00–20:00, по 60 мин</text>
+          <text x="14" y="70" class="node__sub ok">✓ 2 ноября, 15:00</text>
+          <circle cx="160" cy="62" r="6" class="port"/>
+        </g>
+        <g class="node" transform="translate(316 350)">
+          <rect width="200" height="64" rx="14"/>
+          <rect width="200" height="30" rx="14" class="node__head node__head--data"/>
+          <rect y="16" width="200" height="14" class="node__head node__head--data"/>
+          <text x="14" y="20" class="node__title">📊 Google Таблица</text>
+          <text x="14" y="50" class="node__sub">+1 строка · Анна · стрижка</text>
+          <circle cx="0" cy="40" r="6" class="port"/>
+        </g>
+      </svg>
+      <div class="bubble bubble--in">Хочу на стрижку завтра в три. Я Анна</div>
+      <div class="bubble bubble--out">Анна, записал вас на 2 ноября, 15:00. Ждём!</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Для бизнеса: готовые сотрудники ─── -->
+<section class="section" id="business">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <span class="kicker">Для бизнеса</span>
+        <h2>Тайлер выходит на работу: 15 готовых ролей</h2>
+      </div>
+      <p class="muted">На фрилансе такого агента делают под заказ за <b class="hl">30–200 тыс. ₽</b> и 1–3 недели.
+        У нас это шаблон: выбрали, вписали свои цены и график — и он работает.</p>
+    </div>
+
+    <div class="filters" role="tablist">
+      <button class="filter is-on" data-dept="all">Все</button>
+      <button class="filter" data-dept="clients">Клиенты</button>
+      <button class="filter" data-dept="sales">Продажи</button>
+      <button class="filter" data-dept="ops">Операции</button>
+      <button class="filter" data-dept="team">Команда</button>
+    </div>
+
+    <div class="agents">
+      <article class="agent" data-dept="clients">
+        <div class="agent__ico">📞</div>
+        <h3>Администратор на телефоне</h3>
+        <p>Берёт трубку с первого гудка, отвечает на вопросы и записывает в расписание. Салоны, клиники, автосервисы.</p>
+        <div class="agent__ch">Звонки</div>
+      </article>
+      <article class="agent" data-dept="clients">
+        <div class="agent__ico">🔔</div>
+        <h3>Напоминания и подтверждения</h3>
+        <p>Накануне звонит или пишет клиенту, подтверждает визит, переносит запись. Меньше неявок.</p>
+        <div class="agent__ch">Звонки · Telegram</div>
+      </article>
+      <article class="agent" data-dept="clients">
+        <div class="agent__ico">📚</div>
+        <h3>Консультант по базе знаний</h3>
+        <p>Отвечает по вашим PDF, Word, прайсам и сайту. Не знает ответа — зовёт менеджера, а не выдумывает.</p>
+        <div class="agent__ch">Сайт · Telegram · VK · MAX</div>
+      </article>
+      <article class="agent" data-dept="clients">
+        <div class="agent__ico">💬</div>
+        <h3>Поддержка клиентов</h3>
+        <p>Разбирает обращения: вопрос, жалоба, возврат. Отвечает сам, сложное передаёт человеку с историей.</p>
+        <div class="agent__ch">Telegram · VK · сайт</div>
+      </article>
+      <article class="agent" data-dept="clients">
+        <div class="agent__ico">⭐</div>
+        <h3>Ответы на отзывы</h3>
+        <p>Вежливо отвечает на отзывы на Wildberries, Ozon и Яндекс Картах. Негатив — сразу вам в Telegram.</p>
+        <div class="agent__ch">Маркетплейсы · Карты</div>
+      </article>
+
+      <article class="agent" data-dept="sales">
+        <div class="agent__ico">🎯</div>
+        <h3>Менеджер по заявкам</h3>
+        <p>Квалифицирует лида: задача, бюджет, сроки, контакт. Тёплую заявку кладёт в amoCRM или Битрикс24.</p>
+        <div class="agent__ch">Сайт · Авито · мессенджеры</div>
+      </article>
+      <article class="agent" data-dept="sales">
+        <div class="agent__ico">🧮</div>
+        <h3>Расчёт сметы и КП</h3>
+        <p>Задаёт клиенту вопросы, считает по вашему прайсу и присылает готовое коммерческое предложение.</p>
+        <div class="agent__ch">Ремонт · мебель · услуги</div>
+      </article>
+      <article class="agent" data-dept="sales">
+        <div class="agent__ico">🛒</div>
+        <h3>Приём заказов</h3>
+        <p>Собирает товар, адрес и телефон, сверяет остатки в 1С или МойСклад и пишет заказ в таблицу.</p>
+        <div class="agent__ch">Telegram · VK · сайт</div>
+      </article>
+      <article class="agent" data-dept="sales">
+        <div class="agent__ico">📤</div>
+        <h3>Обзвон и реактивация</h3>
+        <p>Звонит по базе старых клиентов с персональным предложением и отмечает, кто заинтересовался.</p>
+        <div class="agent__ch">Звонки</div>
+      </article>
+
+      <article class="agent" data-dept="ops">
+        <div class="agent__ico">📧</div>
+        <h3>Разбор почты</h3>
+        <p>Сортирует входящие письма, вытаскивает счета и заявки, готовит черновики ответов на проверку.</p>
+        <div class="agent__ch">Почта</div>
+      </article>
+      <article class="agent" data-dept="ops">
+        <div class="agent__ico">📑</div>
+        <h3>Прайсы поставщиков</h3>
+        <p>Собирает прайсы из Excel, PDF и почты в единый каталог. Без выдуманных характеристик.</p>
+        <div class="agent__ch">Excel · PDF · почта</div>
+      </article>
+      <article class="agent" data-dept="ops">
+        <div class="agent__ico">📈</div>
+        <h3>Утренний отчёт</h3>
+        <p>Каждое утро присылает в Telegram сводку: заявки, продажи, пропущенные звонки, что требует внимания.</p>
+        <div class="agent__ch">По расписанию</div>
+      </article>
+
+      <article class="agent" data-dept="team">
+        <div class="agent__ico">👥</div>
+        <h3>Отбор резюме</h3>
+        <p>Оценивает отклики по вашим критериям, задаёт кандидатам вопросы и записывает лучших на собеседование.</p>
+        <div class="agent__ch">hh.ru · Telegram</div>
+      </article>
+      <article class="agent" data-dept="team">
+        <div class="agent__ico">📝</div>
+        <h3>Контент для соцсетей</h3>
+        <p>Пишет посты для Telegram и VK по контент-плану в вашем стиле и отправляет на согласование.</p>
+        <div class="agent__ch">Telegram · VK</div>
+      </article>
+      <article class="agent" data-dept="team">
+        <div class="agent__ico">🧠</div>
+        <h3>Помощник сотрудников</h3>
+        <p>Отвечает новичкам по регламентам и инструкциям компании. Можно развернуть на вашем сервере.</p>
+        <div class="agent__ch">Telegram · веб-чат</div>
+      </article>
+    </div>
+
+    <div class="build">
+      <div>
+        <h3>Нет нужного шаблона? Соберите своего</h3>
+        <p class="muted">На холсте: блоки «звонок», «нейросеть», «условие», «таблица», «CRM» соединяются проводами. Без программиста.</p>
+      </div>
+      <a class="btn btn--ghost" href="#preorder" data-goal="cta_custom">Описать свою задачу</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Платформа ─── -->
+<section class="section" id="platform">
+  <div class="wrap">
+    <div class="section__head"><h2>Что внутри</h2></div>
+    <div class="features">
+      <div class="feature"><h4>Холст из блоков</h4><p>Перетаскиваете блоки, соединяете проводами — и видите, как течёт разговор.</p></div>
+      <div class="feature"><h4>Лучшие модели</h4><p>GPT, Claude, Gemini и DeepSeek с оплатой в рублях. Или свой ключ DeepSeek.</p></div>
+      <div class="feature"><h4>Голос и звонки</h4><p>Распознаёт речь, отвечает живым голосом, принимает и совершает звонки.</p></div>
+      <div class="feature"><h4>Все каналы</h4><p>Telegram, ВКонтакте, MAX, виджет на сайте, телефон. Один агент — везде.</p></div>
+      <div class="feature"><h4>Ваши системы</h4><p>Google Таблицы, Яндекс Диск, amoCRM, Битрикс24, 1С — и любой API.</p></div>
+      <div class="feature"><h4>Данные в России</h4><p>Серверы и распознавание речи в РФ. Можно развернуть у себя.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Тарифы ─── -->
+<section class="section section--alt" id="pricing">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Тарифы</h2>
+      <div class="switch">
+        <button class="switch__btn is-on" data-period="month">Месяц</button>
+        <button class="switch__btn" data-period="year">Год <small>−20%</small></button>
+      </div>
+    </div>
+
+    <p class="early">🎁 Оставьте предзаказ до 11 ноября — <b>первые 3 месяца за полцены</b> на любом платном тарифе.
+      <span class="muted">Цены и лимиты предварительные и могут уточниться к запуску.</span></p>
+
+        <div class="plans">
+      <div class="plan plan--hot">
+        <span class="plan__badge">Популярный</span>
+        <h4>Бизнес</h4>
+        <div class="price" data-month="4990">4 990 ₽</div>
+        <ul><li>Все 15 шаблонов</li><li>50 000 сообщений</li><li>500 минут ИИ-оператора и номер</li><li>3 сотрудника, оплата по счёту</li></ul>
+        <a class="btn" href="#preorder" data-plan="business">Предзаказ</a>
+      </div>
+      <div class="plan">
+        <h4>Команда</h4>
+        <div class="price" data-month="14990">14 990 ₽</div>
+        <ul><li>200 000 сообщений</li><li>3 000 минут, 5 номеров</li><li>Исходящие обзвоны</li><li>10 сотрудников, приоритет</li></ul>
+        <a class="btn btn--ghost" href="#preorder" data-plan="team">Предзаказ</a>
+      </div>
+      <div class="plan">
+        <h4>Под ключ</h4>
+        <div class="price">По договору</div>
+        <ul><li>Настроим агента за вас</li><li>Интеграции с CRM и 1С</li><li>Установка на ваш сервер</li><li>Договор и закрывающие документы</li></ul>
+        <a class="btn btn--ghost" href="#preorder" data-plan="enterprise">Обсудить</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Предзаказ ─── -->
+<section class="section" id="preorder">
+  <div class="wrap preorder">
+    <div class="preorder__intro">
+      <h2>Предзаказ</h2>
+      <p class="lead">Запускаемся <b>11 ноября</b>. Оставьте заявку — откроем доступ одними из первых и закрепим скидку 50% на 3 месяца.</p>
+      <ul class="checks">
+        <li>Платить сейчас не нужно</li>
+        <li>Бизнесу бесплатно поможем настроить первого агента</li>
+        <li>Ответим в течение дня</li>
+      </ul>
+      <p class="muted small">Не любите формы? Напишите в <a id="tg-link" href="#">Telegram</a> или на <a id="mail-link" href="#">почту</a>.</p>
+    </div>
+
+    <form class="form" id="preorder-form" novalidate>
+      <div class="form__who" role="radiogroup" aria-label="Для кого">
+        <label class="chip"><input type="radio" name="segment" value="personal"><span>Для себя</span></label>
+        <label class="chip"><input type="radio" name="segment" value="self-employed"><span>ИП / самозанятый</span></label>
+        <label class="chip"><input type="radio" name="segment" value="company" checked><span>Компания</span></label>
+      </div>
+
+      <div class="row">
+        <label class="field"><span>Как к вам обращаться *</span>
+          <input name="name" required maxlength="80" autocomplete="name" placeholder="Анна">
+        </label>
+        <label class="field"><span>Telegram, телефон или почта *</span>
+          <input name="contact" required maxlength="120" placeholder="@anna или +7 900 000-00-00">
+        </label>
+      </div>
+
+      <div class="row" data-business>
+        <label class="field"><span>Сфера</span>
+          <select name="industry">
+            <option value="">Выберите</option>
+            <option>Салон красоты, барбершоп</option>
+            <option>Медицина, стоматология</option>
+            <option>Интернет-магазин, маркетплейсы</option>
+            <option>Кафе, ресторан, доставка еды</option>
+            <option>Автосервис</option>
+            <option>Строительство, ремонт</option>
+            <option>Образование, курсы</option>
+            <option>Недвижимость</option>
+            <option>Услуги (клининг, юристы…)</option>
+            <option>Опт, производство</option>
+            <option>IT, агентство</option>
+            <option>Другое</option>
+          </select>
+        </label>
+        <label class="field"><span>Название компании</span>
+          <input name="company" maxlength="120" placeholder="Салон «Локон»">
+        </label>
+      </div>
+
+      <div class="row" data-business>
+        <label class="field"><span>Сотрудников</span>
+          <select name="team">
+            <option value="">—</option><option>Только я</option><option>2–10</option><option>11–50</option><option>51–250</option><option>Больше 250</option>
+          </select>
+        </label>
+        <label class="field"><span>Обращений клиентов в день</span>
+          <select name="volume">
+            <option value="">—</option><option>До 10</option><option>10–50</option><option>50–200</option><option>Больше 200</option>
+          </select>
+        </label>
+      </div>
+
+      <fieldset class="field" data-business>
+        <span>Каких сотрудников хотите</span>
+        <div class="tags">
+          <label class="chip"><input type="checkbox" name="tasks" value="calls"><span>Звонки</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="booking"><span>Запись клиентов</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="reminders"><span>Напоминания</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="kb"><span>Консультант</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="support"><span>Поддержка</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="reviews"><span>Отзывы</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="leads"><span>Заявки и CRM</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="estimate"><span>Сметы и КП</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="orders"><span>Заказы</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="outbound"><span>Обзвон</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="mail"><span>Почта</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="prices"><span>Прайсы</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="reports"><span>Отчёты</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="hr"><span>Резюме</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="content"><span>Контент</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field" data-business>
+        <span>Где общаетесь с клиентами</span>
+        <div class="tags">
+          <label class="chip"><input type="checkbox" name="channels" value="phone"><span>Телефон</span></label>
+          <label class="chip"><input type="checkbox" name="channels" value="telegram"><span>Telegram</span></label>
+          <label class="chip"><input type="checkbox" name="channels" value="whatsapp"><span>WhatsApp</span></label>
+          <label class="chip"><input type="checkbox" name="channels" value="max"><span>MAX</span></label>
+          <label class="chip"><input type="checkbox" name="channels" value="vk"><span>ВКонтакте</span></label>
+          <label class="chip"><input type="checkbox" name="channels" value="avito"><span>Авито</span></label>
+          <label class="chip"><input type="checkbox" name="channels" value="site"><span>Сайт</span></label>
+          <label class="chip"><input type="checkbox" name="channels" value="email"><span>Почта</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field" data-personal hidden>
+        <span>Для чего помощник</span>
+        <div class="tags">
+          <label class="chip"><input type="checkbox" name="tasks" value="p_chat"><span>Ответы на вопросы</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="p_voice"><span>Разговор голосом</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="p_search"><span>Поиск</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="p_study"><span>Учёба</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="p_work"><span>Работа и тексты</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="p_code"><span>Код</span></label>
+          <label class="chip"><input type="checkbox" name="tasks" value="p_docs"><span>Фото и документы</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field" data-personal hidden>
+        <span>Чем пользуетесь сейчас</span>
+        <div class="tags">
+          <label class="chip"><input type="checkbox" name="current" value="chatgpt"><span>ChatGPT</span></label>
+          <label class="chip"><input type="checkbox" name="current" value="deepseek"><span>DeepSeek</span></label>
+          <label class="chip"><input type="checkbox" name="current" value="alice"><span>Алиса</span></label>
+          <label class="chip"><input type="checkbox" name="current" value="gigachat"><span>GigaChat</span></label>
+          <label class="chip"><input type="checkbox" name="current" value="claude"><span>Claude</span></label>
+          <label class="chip"><input type="checkbox" name="current" value="none"><span>Ничем</span></label>
+        </div>
+      </fieldset>
+
+      <div class="row">
+        <label class="field"><span>Тариф</span>
+          <select name="plan">
+            <option value="">Пока не знаю</option>
+            <option value="free">Старт — 0 ₽</option>
+            <option value="personal">Личный — 390 ₽</option>
+            <option value="pro">Про — 990 ₽</option>
+            <option value="business">Бизнес — 4 990 ₽</option>
+            <option value="team">Команда — 14 990 ₽</option>
+            <option value="enterprise">Под ключ</option>
+          </select>
+        </label>
+        <label class="field"><span>Когда хотите начать</span>
+          <select name="when">
+            <option value="now">Сразу после запуска</option>
+            <option value="month">В течение месяца</option>
+            <option value="later">Пока присматриваюсь</option>
+          </select>
+        </label>
+      </div>
+
+      <label class="field"><span>Опишите задачу своими словами</span>
+        <textarea name="comment" rows="3" maxlength="1500" placeholder="Например: пропускаем звонки по вечерам, хотим, чтобы бот записывал на маникюр"></textarea>
+      </label>
+
+      <!-- ловушка для ботов: люди это поле не видят -->
+      <label class="hp" aria-hidden="true">Сайт <input name="website" tabindex="-1" autocomplete="off"></label>
+
+      <label class="consent">
+        <input type="checkbox" name="consent" required>
+        <span>Согласен на обработку персональных данных по <a href="privacy.html" target="_blank">политике конфиденциальности</a></span>
+      </label>
+
+      <button class="btn btn--wide" type="submit">Оставить предзаказ</button>
+      <p class="form__error" role="alert" hidden></p>
+    </form>
+
+    <div class="thanks" id="thanks" hidden>
+      <div class="thanks__ico">✓</div>
+      <h3>Заявка принята!</h3>
+      <p>Спасибо, <span id="thanks-name"></span>. Напишем вам до запуска 11 ноября и откроем доступ одними из первых.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Вопросы ─── -->
+<section class="section section--alt" id="faq">
+  <div class="wrap faq">
+    <h2>Вопросы</h2>
+    <details><summary>Когда запуск?</summary><p>11 ноября. Сейчас идёт предзаказ: мы собираем заявки, чтобы первыми запустить самые нужные шаблоны. Описание и цены на сайте предварительные.</p></details>
+    <details><summary>Чем это лучше заказать бота на фрилансе?</summary><p>Агента под заказ делают 1–3 недели за 30–200 тыс. ₽, а потом его некому поддерживать. Здесь готовый шаблон работает в день подключения, а менять его можно самому.</p></details>
+    <details><summary>Нужно ли уметь программировать?</summary><p>Нет. Шаблоны настраиваются как анкета: цены, график, база знаний. Для своих сценариев есть холст с блоками, а программисты могут подключать любые системы через API.</p></details>
+    <details><summary>Как агент принимает звонки?</summary><p>Подключаем виртуальный номер российского оператора связи или переадресацию с вашего номера. Агент распознаёт речь, думает по вашему сценарию и отвечает живым голосом.</p></details>
+    <details><summary>Какие нейросети внутри?</summary><p>GPT, Claude, Gemini, DeepSeek и другие — с оплатой в рублях по подписке. Если у вас есть ключ DeepSeek, можно работать на нём.</p></details>
+    <details><summary>Где хранятся данные клиентов?</summary><p>На серверах в России. Заявки и заказы выгружаются к вам — в таблицы, CRM или 1С.</p></details>
+    <details><summary>Можно ли оплатить по счёту?</summary><p>Да, на бизнес-тарифах — по счёту для ИП и ООО с закрывающими документами. Частные лица платят картой или через СБП, подписку можно отключить в один клик.</p></details>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__row">
+    <span>© 2026 TylerAgent · сайт предзаказа, сервис в разработке</span>
+    <a href="privacy.html">Политика конфиденциальности</a>
+  </div>
+</footer>
+
+<a class="sticky-cta btn" href="#preorder" data-goal="cta_sticky">Оставить предзаказ</a>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

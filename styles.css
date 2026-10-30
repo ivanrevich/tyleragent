@@ -85,7 +85,7 @@ p { margin: 0; }
 }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(198, 244, 50, .18); animation: pulse 2s infinite; }
 @keyframes pulse { 50% { box-shadow: 0 0 0 8px rgba(198, 244, 50, 0); } }
-h1 { font-size: clamp(38px, 5.6vw, 66px); font-weight: 800; margin: 22px 0 20px; letter-spacing: -.035em; }
+h1 { font-size: clamp(36px, 4.8vw, 58px); font-weight: 800; margin: 22px 0 20px; letter-spacing: -.035em; }
 h1 em { font-style: normal; color: var(--accent); white-space: nowrap; }
 .lead { font-size: 19px; color: var(--muted); max-width: 560px; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 32px 0 36px; }
@@ -314,12 +314,34 @@ details p { color: var(--muted); padding-bottom: 20px; }
 .logo span { letter-spacing: -.02em; }
 .logo i { font-style: normal; color: var(--accent); }
 
-/* ─── Мыло Тайлера ─── */
-.avatar--soap { background: var(--ink-3); }
-.phone { position: relative; }
-.soap-float {
-  position: absolute; top: -46px; right: -58px; z-index: 2;
-  filter: drop-shadow(0 18px 30px rgba(245, 143, 188, .35));
-  animation: float 6s ease-in-out infinite;
+/* ─── Страница Тайлера ─── */
+.hero__phone { position: relative; display: flex; justify-content: center; }
+.hero__phone .phone { position: relative; z-index: 2; }
+/* фото Тайлера (tyler.jpg) — за телефоном, слева */
+.tyler-photo {
+  position: absolute; z-index: 1; left: -4%; top: 50%; width: 64%; transform: translateY(-50%);
+  border-radius: 50%; box-shadow: 0 0 120px rgba(198, 244, 50, .25);
 }
-@media (max-width: 680px) { .soap-float { width: 96px; height: 84px; top: -30px; right: -6px; } }
+.logo__mark { width: 34px; height: 34px; border-radius: 50%; }
+img.avatar { object-fit: cover; }
+.hero__phone:has(.tyler-photo) .phone { margin-left: 34%; }
+.perks--grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 0; }
+.perks--grid li { padding: 22px; border-radius: var(--radius); background: var(--ink-0); border: 1px solid var(--line); }
+.section--tight { padding: 56px 0; }
+.crosslink {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px; text-decoration: none;
+  padding: 32px; border-radius: 24px; border: 1px solid var(--line);
+  background: linear-gradient(120deg, var(--ink-1), #1a2416);
+  transition: border-color .2s, transform .2s;
+}
+.crosslink:hover { border-color: var(--accent); transform: translateY(-2px); }
+.crosslink h3 { font-size: 24px; margin-bottom: 8px; }
+.crosslink__arrow { flex: none; width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); font-size: 26px; font-weight: 800; }
+.top__nav .top__switch { color: var(--accent); }
+@media (max-width: 1000px) { .perks--grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 680px) {
+  .perks--grid { grid-template-columns: 1fr; }
+  .tyler-photo { display: none; }
+  .hero__phone:has(.tyler-photo) .phone { margin-left: 0; }
+  .crosslink { padding: 22px; }
+}

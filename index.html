@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TylerAgent — личный ИИ-помощник и ИИ-сотрудники для бизнеса</title>
-  <meta name="description" content="ИИ-сотрудники для бизнеса из готовых шаблонов: звонки, запись, продажи, заказы, поддержка. И личный ИИ-помощник с живым голосом. Запуск 11 ноября, открыт предзаказ.">
-  <meta property="og:title" content="TylerAgent — запуск 11 ноября">
-  <meta property="og:description" content="ИИ-сотрудники для бизнеса и личный ИИ-помощник с живым голосом. Оплата в рублях.">
+  <title>Тайлер — ИИ-помощник, с которым можно просто поговорить</title>
+  <meta name="description" content="Новый личный ИИ-помощник: живой голос, поиск со ссылками, тексты и учёба. GPT, Claude, Gemini и DeepSeek с оплатой в рублях. Запуск 11 ноября.">
+  <meta property="og:title" content="Тайлер — ИИ-помощник, с которым можно просто поговорить">
+  <meta property="og:description" content="Новый личный ИИ-помощник: живой голос, поиск со ссылками, тексты и учёба. GPT, Claude, Gemini и DeepSeek с оплатой в рублях. Запуск 11 ноября.">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,30 +24,15 @@
 <!-- ─── Шапка ─── -->
 <header class="top">
   <div class="wrap top__row">
-    <a class="logo" href="#">
-      <svg width="38" height="34" viewBox="0 0 64 56" aria-hidden="true">
-        <defs>
-          <linearGradient id="soapL" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#ffc2dc"/><stop offset=".55" stop-color="#f58fbc"/><stop offset="1" stop-color="#d9608f"/>
-          </linearGradient>
-        </defs>
-        <g transform="rotate(-12 32 30)">
-          <rect x="6" y="14" width="50" height="32" rx="11" fill="#b8467a"/>
-          <rect x="6" y="10" width="50" height="32" rx="11" fill="url(#soapL)"/>
-          <rect x="12" y="15" width="38" height="22" rx="7" fill="none" stroke="#c4527f" stroke-width="1.6" opacity=".55"/>
-          <text x="31" y="33.5" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="800" font-size="17" fill="#b8467a" opacity=".8">T</text>
-          <path d="M14 15.5 q 6 -3 14 -2" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".7"/>
-        </g>
-        <circle cx="54" cy="9" r="5" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
-        <circle cx="60" cy="19" r="2.6" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
-      </svg>
+    <a class="logo" href="index.html">
+      <img class="logo__mark" src="tyler.svg" alt="">
       <span>Tyler<i>Agent</i></span>
     </a>
     <nav class="top__nav">
-      <a href="#business">Для бизнеса</a>
-      <a href="#personal">Для себя</a>
+      <a href="#features">Возможности</a>
       <a href="#pricing">Тарифы</a>
       <a href="#faq">Вопросы</a>
+      <a href="business.html" class="top__switch">Для бизнеса →</a>
     </nav>
     <a class="btn btn--small" href="#preorder" data-goal="cta_header">Предзаказ</a>
   </div>
@@ -55,268 +40,29 @@
 
 <main>
 
-<!-- ─── Первый экран ─── -->
+<!-- ─── Первый экран: Тайлер ─── -->
 <section class="hero">
   <div class="wrap hero__grid">
     <div class="hero__text">
-      <span class="pill"><span class="dot"></span> Запуск 11 ноября · первым клиентам −50%</span>
-      <h1>Тайлер — <em>ИИ&#8209;помощник</em> для вас и&nbsp;вашего бизнеса</h1>
-      <p class="lead">
-        Готовые ИИ-сотрудники отвечают на звонки, записывают клиентов, принимают заказы и ведут продажи
-        в Telegram, VK и на сайте. А для себя — личный помощник, который ищет, пишет и разговаривает живым голосом.
-      </p>
+      <span class="pill"><span class="dot"></span> Новый ИИ-помощник · запуск 11 ноября</span>
+      <h1>Тайлер. <em>ИИ&#8209;помощник</em>, с&nbsp;которым можно просто поговорить</h1>
+      <p class="lead">Спросите голосом или текстом. Тайлер найдёт в интернете, объяснит, напишет и ответит живым человеческим голосом.
+        В приложении на телефоне и компьютере, а ещё в Telegram. Оплата в рублях.</p>
       <div class="hero__cta">
-        <a class="btn" href="#preorder" data-goal="cta_hero">Оставить предзаказ</a>
-        <a class="btn btn--ghost" href="#business">Готовые сотрудники</a>
+        <a class="btn" href="#preorder" data-goal="cta_hero">Хочу Тайлера первым</a>
+        <a class="btn btn--ghost" href="#features">Что он умеет</a>
       </div>
       <ul class="hero__facts">
-        <li><b>15</b> готовых шаблонов</li>
-        <li><b>24/7</b> на звонках и в чатах</li>
-        <li><b>₽</b> оплата картой и по счёту</li>
+        <li><b>Голос</b> живой, с интонациями</li>
+        <li><b>4 модели</b> GPT, Claude, Gemini, DeepSeek</li>
+        <li><b>0 ₽</b> чтобы начать</li>
       </ul>
     </div>
-
-    <!-- Холст: так выглядит схема «запись по звонку» -->
-    <div class="hero__canvas" aria-label="Пример схемы: звонок, извлечение данных, запись, таблица">
-      <svg viewBox="0 0 560 440" class="canvas">
-        <defs>
-          <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
-            <circle cx="1" cy="1" r="1" fill="var(--grid)"/>
-          </pattern>
-        </defs>
-        <rect width="560" height="440" rx="22" fill="var(--ink-1)"/>
-        <rect width="560" height="440" rx="22" fill="url(#grid)"/>
-
-        <g fill="none" stroke-width="2.5">
-          <path class="wire" d="M196 98 C 250 98, 240 196, 300 196"/>
-          <path class="wire wire--live" d="M196 98 C 250 98, 240 196, 300 196"/>
-          <path class="wire" d="M456 196 C 520 196, 500 300, 380 304 C 300 306, 260 300, 236 316"/>
-          <path class="wire wire--live wire--d2" d="M456 196 C 520 196, 500 300, 380 304 C 300 306, 260 300, 236 316"/>
-          <path class="wire" d="M196 352 C 250 352, 260 390, 316 390"/>
-          <path class="wire wire--live wire--d3" d="M196 352 C 250 352, 260 390, 316 390"/>
-        </g>
-
-        <g class="node" transform="translate(36 56)">
-          <rect width="160" height="84" rx="14"/>
-          <rect width="160" height="30" rx="14" class="node__head node__head--trigger"/>
-          <rect y="16" width="160" height="14" class="node__head node__head--trigger"/>
-          <text x="14" y="20" class="node__title">📞 Звонок</text>
-          <text x="14" y="52" class="node__sub">+7 (812) 000-00-00</text>
-          <text x="14" y="70" class="node__sub">«Здравствуйте, салон…»</text>
-          <circle cx="160" cy="42" r="6" class="port"/>
-        </g>
-        <g class="node" transform="translate(300 154)">
-          <rect width="156" height="84" rx="14"/>
-          <rect width="156" height="30" rx="14" class="node__head node__head--ai"/>
-          <rect y="16" width="156" height="14" class="node__head node__head--ai"/>
-          <text x="14" y="20" class="node__title">✨ Извлечь поля</text>
-          <text x="14" y="52" class="node__sub">имя · услуга · время</text>
-          <text x="14" y="70" class="node__sub">модель: GPT-4o</text>
-          <circle cx="0" cy="42" r="6" class="port"/>
-          <circle cx="156" cy="42" r="6" class="port"/>
-        </g>
-        <g class="node" transform="translate(36 290)">
-          <rect width="160" height="84" rx="14"/>
-          <rect width="160" height="30" rx="14" class="node__head node__head--data"/>
-          <rect y="16" width="160" height="14" class="node__head node__head--data"/>
-          <text x="14" y="20" class="node__title">🗓 Запись на время</text>
-          <text x="14" y="52" class="node__sub">10:00–20:00, по 60 мин</text>
-          <text x="14" y="70" class="node__sub ok">✓ 2 ноября, 15:00</text>
-          <circle cx="160" cy="62" r="6" class="port"/>
-        </g>
-        <g class="node" transform="translate(316 350)">
-          <rect width="200" height="64" rx="14"/>
-          <rect width="200" height="30" rx="14" class="node__head node__head--data"/>
-          <rect y="16" width="200" height="14" class="node__head node__head--data"/>
-          <text x="14" y="20" class="node__title">📊 Google Таблица</text>
-          <text x="14" y="50" class="node__sub">+1 строка · Анна · стрижка</text>
-          <circle cx="0" cy="40" r="6" class="port"/>
-        </g>
-      </svg>
-
-      <div class="bubble bubble--in">Хочу на стрижку завтра в три. Я Анна</div>
-      <div class="bubble bubble--out">Анна, записал вас на 2 ноября, 15:00. Ждём!</div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── Для бизнеса: готовые сотрудники ─── -->
-<section class="section" id="business">
-  <div class="wrap">
-    <div class="section__head">
-      <div>
-        <span class="kicker">Для бизнеса</span>
-        <h2>Тайлер выходит на работу: 15 готовых ролей</h2>
-      </div>
-      <p class="muted">На фрилансе такого агента делают под заказ за <b class="hl">30–200 тыс. ₽</b> и 1–3 недели.
-        У нас это шаблон: выбрали, вписали свои цены и график — и он работает.</p>
-    </div>
-
-    <div class="filters" role="tablist">
-      <button class="filter is-on" data-dept="all">Все</button>
-      <button class="filter" data-dept="clients">Клиенты</button>
-      <button class="filter" data-dept="sales">Продажи</button>
-      <button class="filter" data-dept="ops">Операции</button>
-      <button class="filter" data-dept="team">Команда</button>
-    </div>
-
-    <div class="agents">
-      <article class="agent" data-dept="clients">
-        <div class="agent__ico">📞</div>
-        <h3>Администратор на телефоне</h3>
-        <p>Берёт трубку с первого гудка, отвечает на вопросы и записывает в расписание. Салоны, клиники, автосервисы.</p>
-        <div class="agent__ch">Звонки</div>
-      </article>
-      <article class="agent" data-dept="clients">
-        <div class="agent__ico">🔔</div>
-        <h3>Напоминания и подтверждения</h3>
-        <p>Накануне звонит или пишет клиенту, подтверждает визит, переносит запись. Меньше неявок.</p>
-        <div class="agent__ch">Звонки · Telegram</div>
-      </article>
-      <article class="agent" data-dept="clients">
-        <div class="agent__ico">📚</div>
-        <h3>Консультант по базе знаний</h3>
-        <p>Отвечает по вашим PDF, Word, прайсам и сайту. Не знает ответа — зовёт менеджера, а не выдумывает.</p>
-        <div class="agent__ch">Сайт · Telegram · VK · MAX</div>
-      </article>
-      <article class="agent" data-dept="clients">
-        <div class="agent__ico">💬</div>
-        <h3>Поддержка клиентов</h3>
-        <p>Разбирает обращения: вопрос, жалоба, возврат. Отвечает сам, сложное передаёт человеку с историей.</p>
-        <div class="agent__ch">Telegram · VK · сайт</div>
-      </article>
-      <article class="agent" data-dept="clients">
-        <div class="agent__ico">⭐</div>
-        <h3>Ответы на отзывы</h3>
-        <p>Вежливо отвечает на отзывы на Wildberries, Ozon и Яндекс Картах. Негатив — сразу вам в Telegram.</p>
-        <div class="agent__ch">Маркетплейсы · Карты</div>
-      </article>
-
-      <article class="agent" data-dept="sales">
-        <div class="agent__ico">🎯</div>
-        <h3>Менеджер по заявкам</h3>
-        <p>Квалифицирует лида: задача, бюджет, сроки, контакт. Тёплую заявку кладёт в amoCRM или Битрикс24.</p>
-        <div class="agent__ch">Сайт · Авито · мессенджеры</div>
-      </article>
-      <article class="agent" data-dept="sales">
-        <div class="agent__ico">🧮</div>
-        <h3>Расчёт сметы и КП</h3>
-        <p>Задаёт клиенту вопросы, считает по вашему прайсу и присылает готовое коммерческое предложение.</p>
-        <div class="agent__ch">Ремонт · мебель · услуги</div>
-      </article>
-      <article class="agent" data-dept="sales">
-        <div class="agent__ico">🛒</div>
-        <h3>Приём заказов</h3>
-        <p>Собирает товар, адрес и телефон, сверяет остатки в 1С или МойСклад и пишет заказ в таблицу.</p>
-        <div class="agent__ch">Telegram · VK · сайт</div>
-      </article>
-      <article class="agent" data-dept="sales">
-        <div class="agent__ico">📤</div>
-        <h3>Обзвон и реактивация</h3>
-        <p>Звонит по базе старых клиентов с персональным предложением и отмечает, кто заинтересовался.</p>
-        <div class="agent__ch">Звонки</div>
-      </article>
-
-      <article class="agent" data-dept="ops">
-        <div class="agent__ico">📧</div>
-        <h3>Разбор почты</h3>
-        <p>Сортирует входящие письма, вытаскивает счета и заявки, готовит черновики ответов на проверку.</p>
-        <div class="agent__ch">Почта</div>
-      </article>
-      <article class="agent" data-dept="ops">
-        <div class="agent__ico">📑</div>
-        <h3>Прайсы поставщиков</h3>
-        <p>Собирает прайсы из Excel, PDF и почты в единый каталог. Без выдуманных характеристик.</p>
-        <div class="agent__ch">Excel · PDF · почта</div>
-      </article>
-      <article class="agent" data-dept="ops">
-        <div class="agent__ico">📈</div>
-        <h3>Утренний отчёт</h3>
-        <p>Каждое утро присылает в Telegram сводку: заявки, продажи, пропущенные звонки, что требует внимания.</p>
-        <div class="agent__ch">По расписанию</div>
-      </article>
-
-      <article class="agent" data-dept="team">
-        <div class="agent__ico">👥</div>
-        <h3>Отбор резюме</h3>
-        <p>Оценивает отклики по вашим критериям, задаёт кандидатам вопросы и записывает лучших на собеседование.</p>
-        <div class="agent__ch">hh.ru · Telegram</div>
-      </article>
-      <article class="agent" data-dept="team">
-        <div class="agent__ico">📝</div>
-        <h3>Контент для соцсетей</h3>
-        <p>Пишет посты для Telegram и VK по контент-плану в вашем стиле и отправляет на согласование.</p>
-        <div class="agent__ch">Telegram · VK</div>
-      </article>
-      <article class="agent" data-dept="team">
-        <div class="agent__ico">🧠</div>
-        <h3>Помощник сотрудников</h3>
-        <p>Отвечает новичкам по регламентам и инструкциям компании. Можно развернуть на вашем сервере.</p>
-        <div class="agent__ch">Telegram · веб-чат</div>
-      </article>
-    </div>
-
-    <div class="build">
-      <div>
-        <h3>Нет нужного шаблона? Соберите своего</h3>
-        <p class="muted">На холсте: блоки «звонок», «нейросеть», «условие», «таблица», «CRM» соединяются проводами. Без программиста.</p>
-      </div>
-      <a class="btn btn--ghost" href="#preorder" data-goal="cta_custom">Описать свою задачу</a>
-    </div>
-  </div>
-</section>
-
-<!-- ─── Для себя: личный помощник ─── -->
-<section class="section section--alt" id="personal">
-  <div class="wrap personal">
-    <div class="personal__text">
-      <span class="kicker">Для себя</span>
-      <h2>Тайлер, с которым можно просто поговорить</h2>
-      <p class="lead">Спросите голосом или текстом: Тайлер найдёт в интернете, объяснит, напишет и ответит человеческим голосом. В приложении на телефоне и компьютере, а ещё в Telegram.</p>
-      <ul class="perks">
-        <li><span>🎙</span><div><b>Живой голос</b>Разговор как по телефону: перебивайте, переспрашивайте. Голос с интонациями, а не робот.</div></li>
-        <li><span>🔎</span><div><b>Поиск с источниками</b>Свежие ответы из интернета со ссылками: проверить можно за секунду.</div></li>
-        <li><span>✍️</span><div><b>Тексты, учёба, код</b>Письма, конспекты, переводы, решение задач и программирование.</div></li>
-        <li><span>📎</span><div><b>Фото и документы</b>Сфотографируйте счёт, договор или задачу — помощник разберёт.</div></li>
-        <li><span>🌍</span><div><b>Лучшие модели мира</b>GPT, Claude, Gemini и DeepSeek в одном приложении с оплатой в рублях.</div></li>
-      </ul>
-    </div>
-
-    <!-- телефон с диалогом -->
-    <div class="phone" aria-hidden="true">
-      <svg width="150" height="132" viewBox="0 0 64 56" aria-hidden="true" class="soap-float">
-        <defs>
-          <linearGradient id="soapB" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#ffc2dc"/><stop offset=".55" stop-color="#f58fbc"/><stop offset="1" stop-color="#d9608f"/>
-          </linearGradient>
-        </defs>
-        <g transform="rotate(-12 32 30)">
-          <rect x="6" y="14" width="50" height="32" rx="11" fill="#b8467a"/>
-          <rect x="6" y="10" width="50" height="32" rx="11" fill="url(#soapB)"/>
-          <rect x="12" y="15" width="38" height="22" rx="7" fill="none" stroke="#c4527f" stroke-width="1.6" opacity=".55"/>
-          <text x="31" y="33.5" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="800" font-size="17" fill="#b8467a" opacity=".8">T</text>
-          <path d="M14 15.5 q 6 -3 14 -2" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".7"/>
-        </g>
-        <circle cx="54" cy="9" r="5" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
-        <circle cx="60" cy="19" r="2.6" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
-      </svg>
+    <div class="hero__phone">
+      <img class="tyler-photo" src="tyler.svg" alt="Тайлер">
+      <div class="phone" aria-hidden="true">
       <div class="phone__screen">
-        <div class="phone__head"><span class="avatar avatar--soap"><svg width="30" height="26" viewBox="0 0 64 56" aria-hidden="true">
-        <defs>
-          <linearGradient id="soapA" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#ffc2dc"/><stop offset=".55" stop-color="#f58fbc"/><stop offset="1" stop-color="#d9608f"/>
-          </linearGradient>
-        </defs>
-        <g transform="rotate(-12 32 30)">
-          <rect x="6" y="14" width="50" height="32" rx="11" fill="#b8467a"/>
-          <rect x="6" y="10" width="50" height="32" rx="11" fill="url(#soapA)"/>
-          <rect x="12" y="15" width="38" height="22" rx="7" fill="none" stroke="#c4527f" stroke-width="1.6" opacity=".55"/>
-          <text x="31" y="33.5" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="800" font-size="17" fill="#b8467a" opacity=".8">T</text>
-          <path d="M14 15.5 q 6 -3 14 -2" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".7"/>
-        </g>
-        <circle cx="54" cy="9" r="5" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
-        <circle cx="60" cy="19" r="2.6" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
-      </svg></span><div><b>Тайлер</b><small>говорит…</small></div></div>
+        <div class="phone__head"><img class="avatar" src="tyler.svg" alt=""><div><b>Тайлер</b><small>говорит…</small></div></div>
         <div class="msg msg--me">Какие документы нужны для загранпаспорта ребёнку?</div>
         <div class="msg msg--ai">Для ребёнка до 14 лет: заявление от родителя, свидетельство о рождении, паспорт родителя и фото. Госпошлина 1 000 ₽ за паспорт нового образца…<span class="src">госуслуги · мвд.рф</span></div>
         <div class="msg msg--me voice"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><em>0:04</em></div>
@@ -327,18 +73,28 @@
   </div>
 </section>
 
-<!-- ─── Платформа ─── -->
-<section class="section">
+<!-- ─── Что умеет ─── -->
+<section class="section section--alt" id="features">
   <div class="wrap">
-    <div class="section__head"><h2>Что внутри</h2></div>
-    <div class="features">
-      <div class="feature"><h4>Холст из блоков</h4><p>Перетаскиваете блоки, соединяете проводами — и видите, как течёт разговор.</p></div>
-      <div class="feature"><h4>Лучшие модели</h4><p>GPT, Claude, Gemini и DeepSeek с оплатой в рублях. Или свой ключ DeepSeek.</p></div>
-      <div class="feature"><h4>Голос и звонки</h4><p>Распознаёт речь, отвечает живым голосом, принимает и совершает звонки.</p></div>
-      <div class="feature"><h4>Все каналы</h4><p>Telegram, ВКонтакте, MAX, виджет на сайте, телефон. Один агент — везде.</p></div>
-      <div class="feature"><h4>Ваши системы</h4><p>Google Таблицы, Яндекс Диск, amoCRM, Битрикс24, 1С — и любой API.</p></div>
-      <div class="feature"><h4>Данные в России</h4><p>Серверы и распознавание речи в РФ. Можно развернуть у себя.</p></div>
-    </div>
+    <div class="section__head"><h2>Что умеет Тайлер</h2></div>
+    <ul class="perks perks--grid">
+        <li><span>🎙</span><div><b>Живой голос</b>Разговор как по телефону: перебивайте, переспрашивайте. Голос с интонациями, а не робот.</div></li>
+        <li><span>🔎</span><div><b>Поиск с источниками</b>Свежие ответы из интернета со ссылками: проверить можно за секунду.</div></li>
+        <li><span>✍️</span><div><b>Тексты, учёба, код</b>Письма, конспекты, переводы, решение задач и программирование.</div></li>
+        <li><span>📎</span><div><b>Фото и документы</b>Сфотографируйте счёт, договор или задачу — помощник разберёт.</div></li>
+        <li><span>🌍</span><div><b>Лучшие модели мира</b>GPT, Claude, Gemini и DeepSeek в одном приложении с оплатой в рублях.</div></li>
+      </ul>
+  </div>
+</section>
+
+<!-- ─── Переход на бизнес ─── -->
+<section class="section section--tight">
+  <div class="wrap">
+    <a class="crosslink" href="business.html" data-goal="to_business">
+      <div><span class="kicker">Для компаний</span><h3>Тайлер может работать и у вас в бизнесе</h3>
+        <p class="muted">Отвечает на звонки, записывает клиентов, принимает заказы. 15 готовых ролей.</p></div>
+      <span class="crosslink__arrow">→</span>
+    </a>
   </div>
 </section>
 
@@ -356,8 +112,7 @@
     <p class="early">🎁 Оставьте предзаказ до 11 ноября — <b>первые 3 месяца за полцены</b> на любом платном тарифе.
       <span class="muted">Цены и лимиты предварительные и могут уточниться к запуску.</span></p>
 
-    <h3 class="plans__group">Личный помощник</h3>
-    <div class="plans">
+        <div class="plans">
       <div class="plan">
         <h4>Старт</h4>
         <div class="price" data-month="0">0 ₽</div>
@@ -378,29 +133,7 @@
       </div>
     </div>
 
-    <h3 class="plans__group">Для бизнеса</h3>
-    <div class="plans">
-      <div class="plan plan--hot">
-        <span class="plan__badge">Популярный</span>
-        <h4>Бизнес</h4>
-        <div class="price" data-month="4990">4 990 ₽</div>
-        <ul><li>Все 15 шаблонов</li><li>50 000 сообщений</li><li>500 минут ИИ-оператора и номер</li><li>3 сотрудника, оплата по счёту</li></ul>
-        <a class="btn" href="#preorder" data-plan="business">Предзаказ</a>
       </div>
-      <div class="plan">
-        <h4>Команда</h4>
-        <div class="price" data-month="14990">14 990 ₽</div>
-        <ul><li>200 000 сообщений</li><li>3 000 минут, 5 номеров</li><li>Исходящие обзвоны</li><li>10 сотрудников, приоритет</li></ul>
-        <a class="btn btn--ghost" href="#preorder" data-plan="team">Предзаказ</a>
-      </div>
-      <div class="plan">
-        <h4>Под ключ</h4>
-        <div class="price">По договору</div>
-        <ul><li>Настроим агента за вас</li><li>Интеграции с CRM и 1С</li><li>Установка на ваш сервер</li><li>Договор и закрывающие документы</li></ul>
-        <a class="btn btn--ghost" href="#preorder" data-plan="enterprise">Обсудить</a>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- ─── Предзаказ ─── -->
@@ -419,9 +152,9 @@
 
     <form class="form" id="preorder-form" novalidate>
       <div class="form__who" role="radiogroup" aria-label="Для кого">
-        <label class="chip"><input type="radio" name="segment" value="personal"><span>Для себя</span></label>
+        <label class="chip"><input type="radio" name="segment" value="personal" checked><span>Для себя</span></label>
         <label class="chip"><input type="radio" name="segment" value="self-employed"><span>ИП / самозанятый</span></label>
-        <label class="chip"><input type="radio" name="segment" value="company" checked><span>Компания</span></label>
+        <label class="chip"><input type="radio" name="segment" value="company"><span>Компания</span></label>
       </div>
 
       <div class="row">
@@ -579,12 +312,10 @@
   <div class="wrap faq">
     <h2>Вопросы</h2>
     <details><summary>Когда запуск?</summary><p>11 ноября. Сейчас идёт предзаказ: мы собираем заявки, чтобы первыми запустить самые нужные шаблоны. Описание и цены на сайте предварительные.</p></details>
-    <details><summary>Чем это лучше заказать бота на фрилансе?</summary><p>Агента под заказ делают 1–3 недели за 30–200 тыс. ₽, а потом его некому поддерживать. Здесь готовый шаблон работает в день подключения, а менять его можно самому.</p></details>
-    <details><summary>Нужно ли уметь программировать?</summary><p>Нет. Шаблоны настраиваются как анкета: цены, график, база знаний. Для своих сценариев есть холст с блоками, а программисты могут подключать любые системы через API.</p></details>
-    <details><summary>Как агент принимает звонки?</summary><p>Подключаем виртуальный номер российского оператора связи или переадресацию с вашего номера. Агент распознаёт речь, думает по вашему сценарию и отвечает живым голосом.</p></details>
     <details><summary>Какие нейросети внутри?</summary><p>GPT, Claude, Gemini, DeepSeek и другие — с оплатой в рублях по подписке. Если у вас есть ключ DeepSeek, можно работать на нём.</p></details>
     <details><summary>Где хранятся данные клиентов?</summary><p>На серверах в России. Заявки и заказы выгружаются к вам — в таблицы, CRM или 1С.</p></details>
-    <details><summary>Можно ли оплатить по счёту?</summary><p>Да, на бизнес-тарифах — по счёту для ИП и ООО с закрывающими документами. Частные лица платят картой или через СБП, подписку можно отключить в один клик.</p></details>
+    <details><summary>Чем Тайлер лучше ChatGPT или Алисы?</summary><p>Лучшие модели мира в одном приложении без VPN и зарубежных карт, плюс живой голосовой разговор. Тайлер ищет в интернете со ссылками на источники и помнит контекст разговора.</p></details>
+    <details><summary>Как оплатить?</summary><p>Картой российского банка или через СБП. Подписку можно отключить в один клик. Тариф «Старт» бесплатный.</p></details>
   </div>
 </section>
 
