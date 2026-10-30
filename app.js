@@ -1,4 +1,4 @@
-// ─── Лендинг Аси: переключатели, цены, форма предзаказа ───
+// ─── Лендинг TylerAgent: переключатели, цены, форма предзаказа ───
 (() => {
   "use strict";
 
@@ -17,12 +17,12 @@
   const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "yclid", "vkclid"];
   const params = new URLSearchParams(location.search);
   const current = Object.fromEntries(UTM_KEYS.filter((k) => params.get(k)).map((k) => [k, params.get(k)]));
-  if (Object.keys(current).length && !store.get("asya_first_touch")) {
-    store.set("asya_first_touch", { ...current, referrer: document.referrer, at: new Date().toISOString() });
+  if (Object.keys(current).length && !store.get("tyler_first_touch")) {
+    store.set("tyler_first_touch", { ...current, referrer: document.referrer, at: new Date().toISOString() });
   }
   const attribution = () => ({
     ...current,
-    first_touch: store.get("asya_first_touch") || { referrer: document.referrer },
+    first_touch: store.get("tyler_first_touch") || { referrer: document.referrer },
   });
 
   // ─── Яндекс Метрика (если указан счётчик) ───
@@ -154,7 +154,7 @@
     try {
       await send(lead);
       // копия у человека в браузере — пригодится, если он вернётся
-      store.set("asya_lead", { name, at: lead.created_at });
+      store.set("tyler_lead", { name, at: lead.created_at });
       goal("preorder", { plan: lead.plan, segment: lead.segment });
       $("#thanks-name").textContent = name;
       form.hidden = true;
@@ -189,10 +189,10 @@
   async function send(lead) {
     if (!cfg.formEndpoint) {
       // адрес не настроен: сохраняем локально, чтобы можно было проверить вёрстку
-      const all = store.get("asya_leads_local") || [];
+      const all = store.get("tyler_leads_local") || [];
       all.push(lead);
-      store.set("asya_leads_local", all);
-      console.warn("[Ася] formEndpoint не задан в config.js — заявка сохранена только в этом браузере:", lead);
+      store.set("tyler_leads_local", all);
+      console.warn("[TylerAgent] formEndpoint не задан в config.js — заявка сохранена только в этом браузере:", lead);
       return;
     }
     // text/plain — «простой» запрос без preflight: Apps Script не умеет отвечать на OPTIONS

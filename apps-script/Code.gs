@@ -1,4 +1,4 @@
-// ─── Приём предзаказов Аси: Google Таблица + уведомление в Telegram ───
+// ─── Приём предзаказов TylerAgent: Google Таблица + уведомление в Telegram ───
 //
 // Бесплатно, без сервера: скрипт живёт внутри вашей Google Таблицы.
 // Установка — landing/apps-script/README.md.
@@ -40,7 +40,7 @@ function doPost(e) {
 
 // открыть адрес скрипта в браузере — проверка, что он развёрнут
 function doGet() {
-  return json({ ok: true, service: "asya-preorders" });
+  return json({ ok: true, service: "tyler-preorders" });
 }
 
 function validate(lead) {

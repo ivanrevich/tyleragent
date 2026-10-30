@@ -312,3 +312,4 @@ details p { color: var(--muted); padding-bottom: 20px; }
 .phone__input b { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); }
 
 .logo span { letter-spacing: -.02em; }
+.logo i { font-style: normal; color: var(--accent); }
