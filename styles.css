@@ -320,10 +320,11 @@ details p { color: var(--muted); padding-bottom: 20px; }
 /* фото Тайлера (tyler.jpg) — за телефоном, слева */
 .tyler-photo {
   position: absolute; z-index: 1; left: -4%; top: 50%; width: 64%; transform: translateY(-50%);
-  border-radius: 50%; box-shadow: 0 0 120px rgba(245, 143, 188, .3);
+  border-radius: 50%; background: #f58fbc; object-fit: contain; object-position: center bottom; padding: 6% 4% 0;
+  box-shadow: 0 0 120px rgba(245, 143, 188, .3);
 }
-.logo__mark { width: 34px; height: 34px; border-radius: 50%; }
-img.avatar { object-fit: cover; }
+.logo__mark { width: 36px; height: 36px; border-radius: 50%; background: #f58fbc; object-fit: contain; object-position: center bottom; padding: 4px 1px 0; }
+img.avatar { background: #f58fbc; object-fit: contain; object-position: center bottom; padding: 4px 1px 0; }
 .hero__phone:has(.tyler-photo) .phone { margin-left: 34%; }
 .perks--grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 0; }
 .perks--grid li { padding: 22px; border-radius: var(--radius); background: var(--ink-0); border: 1px solid var(--line); }
