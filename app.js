@@ -60,6 +60,28 @@
     setInterval(tick, 30_000);
   }
 
+  // ─── Поле ввода на первом экране: печатает примеры, как будто их набирают ───
+
+  const typer = $(".prompt__text[data-phrases]");
+  if (typer) {
+    const phrases = JSON.parse(typer.dataset.phrases);
+    const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (still) typer.textContent = phrases[0];
+    else {
+      let p = 0, i = 0, erasing = false;
+      const step = () => {
+        const text = phrases[p];
+        i += erasing ? -1 : 1;
+        typer.textContent = text.slice(0, i);
+        let delay = erasing ? 18 : 42;
+        if (!erasing && i === text.length) { erasing = true; delay = 1800; }
+        else if (erasing && i === 0) { erasing = false; p = (p + 1) % phrases.length; delay = 300; }
+        setTimeout(step, delay);
+      };
+      step();
+    }
+  }
+
   // ─── Роли для бизнеса: фильтр по отделам ───
 
   $$("[data-dept].filter").forEach((btn) => btn.addEventListener("click", () => {

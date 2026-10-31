@@ -4,36 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Тайлер — ИИ-помощник, с которым можно просто поговорить</title>
-  <meta name="description" content="Новый личный ИИ-помощник: живой голос, поиск со ссылками, тексты и учёба. GPT, Claude, Gemini и DeepSeek с оплатой в рублях. Запуск 11 ноября.">
+  <meta name="description" content="Тайлер — личный ИИ-помощник с командой агентов: пишет код, ищет, разбирается с файлами и говорит живым голосом. GPT, Claude и DeepSeek с оплатой в рублях. Запуск 11 ноября.">
   <meta property="og:title" content="Тайлер — ИИ-помощник, с которым можно просто поговорить">
-  <meta property="og:description" content="Новый личный ИИ-помощник: живой голос, поиск со ссылками, тексты и учёба. GPT, Claude, Gemini и DeepSeek с оплатой в рублях. Запуск 11 ноября.">
+  <meta property="og:description" content="Личный ИИ-помощник с командой агентов. Оплата в рублях, без VPN. Запуск 11 ноября.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="screens/chat.webp">
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ─── Полоса: предварительная версия ─── -->
-<div class="notice">
-  <div class="wrap">Запуск <b>11 ноября</b>. Сейчас идёт предзаказ: описание и цены предварительные. <span class="countdown" data-launch="2026-11-11T12:00:00+03:00"></span></div>
-</div>
+<div class="notice">Запуск <b>11 ноября</b> · идёт предзаказ, описание и цены предварительные <span class="countdown" data-launch="2026-11-11T12:00:00+03:00"></span></div>
 
-<!-- ─── Шапка ─── -->
 <header class="top">
   <div class="wrap top__row">
-    <a class="logo" href="index.html">
-      <img class="logo__mark" src="tyler.png" alt="">
-      <span>Tyler<i>Agent</i></span>
-    </a>
+    <a class="logo" href="index.html"><img src="tyler.png" alt="">TylerAgent</a>
     <nav class="top__nav">
+      <a href="#features">Возможности</a>
       <a href="#compare">Сравнение</a>
-      <a href="#screens">Интерфейс</a>
       <a href="#pricing">Тарифы</a>
-      <a href="#faq">Вопросы</a>
-      <a href="business.html" class="top__switch">Для бизнеса →</a>
+      <a href="business.html">Для бизнеса</a>
     </nav>
     <a class="btn btn--small" href="#preorder" data-goal="cta_header">Предзаказ</a>
   </div>
@@ -41,225 +34,138 @@
 
 <main>
 
-<!-- ─── Первый экран: Тайлер ─── -->
 <section class="hero">
-  <div class="wrap hero__grid">
-    <div class="hero__text">
-      <span class="pill"><span class="dot"></span> Новый ИИ-помощник · запуск 11 ноября</span>
-      <h1>Тайлер. <em>ИИ&#8209;помощник</em>, с&nbsp;которым можно просто поговорить</h1>
-      <p class="lead">Спросите голосом или текстом. Тайлер найдёт в интернете, объяснит, напишет и ответит живым человеческим голосом.
-        В приложении на телефоне и компьютере, а ещё в Telegram. Оплата в рублях.</p>
-      <div class="hero__cta">
-        <a class="btn" href="#preorder" data-goal="cta_hero">Хочу Тайлера первым</a>
-        <a class="btn btn--ghost" href="#features">Что он умеет</a>
-      </div>
-      <ul class="hero__facts">
-        <li><b>Голос</b> живой, с интонациями</li>
-        <li><b>4 модели</b> GPT, Claude, Gemini, DeepSeek</li>
-        <li><b>0 ₽</b> чтобы начать</li>
-      </ul>
+  <div class="wrap">
+    <h1>Тайлер. Просто&nbsp;поговорите.</h1>
+    <p class="lead">Личный ИИ-помощник с командой агентов: пишет код, разбирается в файлах, ищет и отвечает живым голосом. Лучшие модели мира — в рублях и без VPN.</p>
+
+    <a class="prompt" href="#preorder" data-goal="cta_prompt">
+      <span class="prompt__text" data-phrases='["Посмотри мой проект и почини сборку","Составь план тренировок на неделю","Найди в договоре подводные камни","Переведи письмо на английский и смягчи тон","Объясни, как работает ипотека"]'></span>
+      <span class="prompt__go"><svg viewBox="0 0 24 24" fill="none" stroke="#0b0b0c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></span>
+    </a>
+    <div class="chips"><span>Код</span><span>Документы</span><span>Учёба</span><span>Голос</span><span>GitHub</span></div>
+  </div>
+  <div class="shot"><img src="screens/chat.webp" alt="Чат с Тайлером: кодер чинит сборку и просит разрешения выполнить команду" width="2720" height="1760"></div>
+  <p class="caption">Приложение для компьютера. Тайлер поручает задачу кодеру — тот спрашивает разрешения перед командой.</p>
+</section>
+
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Не просто чат. Команда.</h2>
+      <p>Тайлер отвечает сам или раздаёт задачу агентам — у каждого своя роль, инструменты и материалы.</p>
     </div>
-    <div class="hero__phone">
-      <img class="tyler-photo" src="tyler.png" alt="Тайлер">
-      <div class="phone" aria-hidden="true">
-      <div class="phone__screen">
-        <div class="phone__head"><img class="avatar" src="tyler.png" alt=""><div><b>Тайлер</b><small>говорит…</small></div></div>
-        <div class="msg msg--me">Какие документы нужны для загранпаспорта ребёнку?</div>
-        <div class="msg msg--ai">Для ребёнка до 14 лет: заявление от родителя, свидетельство о рождении, паспорт родителя и фото. Подать можно через Госуслуги или МФЦ…<span class="src">госуслуги · мвд.рф</span></div>
-        <div class="msg msg--me voice"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><em>0:04</em></div>
-        <div class="msg msg--ai voice voice--ai"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><em>0:09</em></div>
-        <div class="phone__input"><span>Спросите что угодно…</span><b><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#11160a" stroke-width="2.4" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></b></div>
-      </div>
+    <div class="grid">
+      <div><span class="num">01</span><h3>Кодер и инженер</h3><p>Читают проект, правят файлы, запускают сборку и тесты, работают с git и GitHub.</p></div>
+      <div><span class="num">02</span><h3>Исследователь</h3><p>Открывает ссылки и документацию, сверяет источники, отделяет факты от мнений.</p></div>
+      <div><span class="num">03</span><h3>Живой голос</h3><p>Говорите как по телефону: Тайлер распознаёт речь и отвечает голосом с интонациями.</p></div>
+      <div><span class="num">04</span><h3>Ваши файлы</h3><p>Только в папках, которые вы разрешили. Выше по дереву — ни шагу.</p></div>
+      <div><span class="num">05</span><h3>Под контролем</h3><p>Запись файла, команда в терминале, задача на GitHub — только после вашего «Разрешить».</p></div>
+      <div><span class="num">06</span><h3>Свои агенты</h3><p>Создайте агента под себя: инструкция, инструменты, файлы, ссылки и заметки.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ─── Как ChatGPT и Claude ─── -->
+<section class="section">
+  <div class="wrap">
+    <div class="pair">
+      <figure><div class="shot"><img src="screens/team.webp" alt="Команда агентов" loading="lazy" width="2720" height="1760"></div><figcaption>Команда: кодер, инженер, исследователь, аналитик, редактор, ревьюер.</figcaption></figure>
+      <figure><div class="shot"><img src="screens/chat.webp" alt="Чат" loading="lazy" width="2720" height="1760"></div><figcaption>Ход работы виден в чате — кто что делает и с какими файлами.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="compare">
   <div class="wrap">
     <div class="section__head">
-      <div><span class="kicker">То же самое, только проще</span>
-        <h2>Как ChatGPT и Claude — но в рублях и без VPN</h2></div>
-      <p class="muted">Внутри те же нейросети: GPT, Claude, Gemini и DeepSeek. Тайлер просто собирает их в одном
-        приложении, говорит по-русски живым голосом и принимает российские карты.</p>
+      <h2>Как ChatGPT и Claude.<br>Только в рублях и без VPN.</h2>
+      <p>Внутри те же модели — GPT, Claude, Gemini и DeepSeek. Тайлер собирает их в одном приложении и работает в России.</p>
     </div>
     <div class="compare">
       <table>
         <thead><tr><th></th><th class="is-us">Тайлер</th><th>ChatGPT</th><th>Claude</th><th>Алиса</th></tr></thead>
         <tbody>
-          <tr><td>Модели GPT, Claude, Gemini, DeepSeek</td><td class="is-us">все в одном</td><td>только GPT</td><td>только Claude</td><td>YandexGPT</td></tr>
-          <tr><td>Работает в России без VPN</td><td class="is-us">✓</td><td>—</td><td>—</td><td>✓</td></tr>
-          <tr><td>Оплата российской картой и СБП</td><td class="is-us">✓</td><td>—</td><td>—</td><td>✓</td></tr>
-          <tr><td>Живой голосовой разговор</td><td class="is-us">✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-          <tr><td>Поиск со ссылками на источники</td><td class="is-us">✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-          <tr><td>Бот в Telegram</td><td class="is-us">✓</td><td>—</td><td>—</td><td>—</td></tr>
-          <tr><td>Цена в месяц</td><td class="is-us">0 ₽ / от 790 ₽</td><td>от $20</td><td>от $20</td><td>в Яндекс Плюс</td></tr>
+          <tr><td>GPT, Claude, Gemini, DeepSeek</td><td class="is-us">все</td><td>GPT</td><td>Claude</td><td>YandexGPT</td></tr>
+          <tr><td>Работает в России без VPN</td><td class="is-us">да</td><td>нет</td><td>нет</td><td>да</td></tr>
+          <tr><td>Оплата российской картой и СБП</td><td class="is-us">да</td><td>нет</td><td>нет</td><td>да</td></tr>
+          <tr><td>Команда агентов, файлы и команды</td><td class="is-us">да</td><td>частично</td><td>частично</td><td>нет</td></tr>
+          <tr><td>Голосовой разговор</td><td class="is-us">да</td><td>да</td><td>да</td><td>да</td></tr>
+          <tr><td>Цена в месяц</td><td class="is-us">0 / от 790 ₽</td><td>от $20</td><td>от $20</td><td>в Яндекс Плюс</td></tr>
         </tbody>
       </table>
     </div>
   </div>
 </section>
 
-<!-- ─── Экраны приложения ─── -->
-<section class="section section--alt" id="screens">
+<section class="section" id="pricing">
   <div class="wrap">
-    <div class="section__head">
-      <div><span class="kicker">Интерфейс</span><h2>Так выглядит Тайлер</h2></div>
-      <p class="muted">Приложение для компьютера и телефона. Экраны предварительные — финальный дизайн к запуску.</p>
-    </div>
-    <div class="shots">
-      <figure class="shot shot--wide">
-        <div class="win">
-          <div class="win__bar"><i></i><i></i><i></i><span>Тайлер</span></div>
-          <div class="win__body chatapp">
-            <aside class="chatapp__side">
-              <div class="chatapp__new">＋ Новый чат</div>
-              <div class="chatapp__item is-on">Загранпаспорт ребёнку</div>
-              <div class="chatapp__item">План тренировок</div>
-              <div class="chatapp__item">Письмо арендодателю</div>
-              <div class="chatapp__item">Задача по физике</div>
-              <div class="chatapp__item">Рецепт на ужин</div>
-            </aside>
-            <div class="chatapp__main">
-              <div class="chatapp__top"><span class="chip">GPT-4o ▾</span><span class="chip chip--ghost">🔎 Поиск</span><span class="chip chip--ghost">🎙 Голос</span></div>
-              <div class="msg msg--me">Какие документы нужны для загранпаспорта ребёнку до 14 лет?</div>
-              <div class="msg msg--ai">Понадобятся: заявление от родителя, свидетельство о рождении, паспорт родителя и фото.
-                Подать можно через Госуслуги или в МФЦ, госпошлина зависит от вида паспорта.
-                <span class="src">[1] gosuslugi.ru · [2] мвд.рф</span></div>
-              <div class="msg msg--me">А сколько делают?</div>
-              <div class="msg msg--ai typing"><i></i><i></i><i></i></div>
-              <div class="chatapp__input">Спросите что угодно…<b>↑</b></div>
-            </div>
-          </div>
-        </div>
-        <figcaption>Чат на компьютере: выбор модели, поиск, история разговоров</figcaption>
-      </figure>
-
-      <figure class="shot">
-        <div class="mobile">
-          <div class="voice-screen">
-            <div class="voice-screen__top">Голосовой режим</div>
-            <div class="orb"><img src="tyler.png" alt=""></div>
-            <div class="voice-screen__status">Слушаю…</div>
-            <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <p class="voice-screen__text">«Напомни завтра в восемь позвонить маме и подскажи, что подарить ей на юбилей»</p>
-            <div class="voice-screen__btns"><span>✕</span><span class="is-main">❚❚</span><span>⌨</span></div>
-          </div>
-        </div>
-        <figcaption>Голосом — как по телефону</figcaption>
-      </figure>
-
-      <figure class="shot">
-        <div class="mobile">
-          <div class="tg">
-            <div class="tg__head"><img src="tyler.png" alt=""><div><b>Тайлер</b><small>бот</small></div></div>
-            <div class="tg__msg tg__msg--me">🎙 0:07</div>
-            <div class="tg__msg">Распознал: «переведи на английский: буду через 10 минут»<br><br><b>I'll be there in 10 minutes.</b></div>
-            <div class="tg__msg tg__msg--me">Сфоткал задачу 📷</div>
-            <div class="tg__msg">Это задача на движение. Скорость сближения 90 км/ч, значит встретятся через 2 часа. Разобрать по шагам?</div>
-          </div>
-        </div>
-        <figcaption>Бот в Telegram: голосовые и фото</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ─── Что умеет ─── -->
-<section class="section section--alt" id="features">
-  <div class="wrap">
-    <div class="section__head"><h2>Что умеет Тайлер</h2></div>
-    <ul class="perks perks--grid">
-        <li><span>🎙</span><div><b>Живой голос</b>Разговор как по телефону: перебивайте, переспрашивайте. Голос с интонациями, а не робот.</div></li>
-        <li><span>🔎</span><div><b>Поиск с источниками</b>Свежие ответы из интернета со ссылками: проверить можно за секунду.</div></li>
-        <li><span>✍️</span><div><b>Тексты, учёба, код</b>Письма, конспекты, переводы, решение задач и программирование.</div></li>
-        <li><span>📎</span><div><b>Фото и документы</b>Сфотографируйте счёт, договор или задачу — помощник разберёт.</div></li>
-        <li><span>🌍</span><div><b>Лучшие модели мира</b>GPT, Claude, Gemini и DeepSeek в одном приложении с оплатой в рублях.</div></li>
-      </ul>
-  </div>
-</section>
-
-<!-- ─── Переход на бизнес ─── -->
-<section class="section section--tight">
-  <div class="wrap">
-    <a class="crosslink" href="business.html" data-goal="to_business">
-      <div><span class="kicker">Для компаний</span><h3>Тайлер может работать и у вас в бизнесе</h3>
-        <p class="muted">Отвечает на звонки, записывает клиентов, принимает заказы. 15 готовых ролей.</p></div>
-      <span class="crosslink__arrow">→</span>
-    </a>
-  </div>
-</section>
-
-<!-- ─── Тарифы ─── -->
-<section class="section section--alt" id="pricing">
-  <div class="wrap">
-    <div class="section__head">
+    <div class="pricing-head">
       <h2>Тарифы</h2>
       <div class="switch">
         <button class="switch__btn is-on" data-period="month">Месяц</button>
         <button class="switch__btn" data-period="year">Год <small>−20%</small></button>
       </div>
     </div>
-
-    <p class="early">🎁 Оставьте предзаказ до 11 ноября — <b>первые 3 месяца за полцены</b> на любом платном тарифе.
-      <span class="muted">Цены и лимиты предварительные и могут уточниться к запуску.</span></p>
-
-        <div class="plans">
+    <div class="plans">
       <div class="plan">
         <h4>Старт</h4>
         <div class="price" data-month="0">0 ₽</div>
-        <ul><li>10 сообщений в день</li><li>Быстрая модель DeepSeek</li><li>Голосом — 15 ответов в месяц</li><li>Telegram и приложение</li></ul>
-        <a class="btn btn--ghost" href="#preorder" data-plan="free">Хочу попробовать</a>
+        <ul><li>10 сообщений в день</li><li>Быстрая модель</li><li>15 голосовых ответов</li></ul>
+        <a class="btn btn--ghost" href="#preorder" data-plan="free">Начать бесплатно</a>
       </div>
-      <div class="plan">
+      <div class="plan plan--hot">
         <h4>Плюс</h4>
         <div class="price" data-month="790">790 ₽</div>
-        <ul><li>3 000 сообщений в месяц</li><li>GPT, Claude, Gemini — 100 запросов</li><li>Голосовой разговор — 100 ответов</li><li>Поиск в интернете, фото и документы</li></ul>
-        <a class="btn btn--ghost" href="#preorder" data-plan="personal">Предзаказ</a>
+        <ul><li>3 000 сообщений</li><li>GPT, Claude, Gemini — 100 запросов</li><li>Голос — 100 ответов</li><li>Команда агентов</li></ul>
+        <a class="btn" href="#preorder" data-plan="personal">Предзаказ</a>
       </div>
       <div class="plan">
         <h4>Про</h4>
         <div class="price" data-month="1790">1 790 ₽</div>
-        <ul><li>6 000 сообщений в месяц</li><li>Мощные модели — 500 запросов</li><li>Голосовой разговор — 300 ответов</li><li>Свой бот в Telegram и агенты на холсте</li></ul>
+        <ul><li>6 000 сообщений</li><li>Мощные модели — 500 запросов</li><li>Голос — 300 ответов</li><li>GitHub и команды на компьютере</li></ul>
         <a class="btn btn--ghost" href="#preorder" data-plan="pro">Предзаказ</a>
       </div>
     </div>
-
-      </div>
+    <p class="note">Предзаказ до 11 ноября — первые 3 месяца за полцены. Цены и лимиты предварительные.</p>
+  </div>
 </section>
 
-<!-- ─── Предзаказ ─── -->
 <section class="section" id="preorder">
-  <div class="wrap">
-    <div class="quick">
-      <h2>Хотите Тайлера первым?</h2>
-      <p class="lead">Оставьте Telegram или почту — пришлём доступ 11 ноября.</p>
-      <form class="quick__form" id="preorder-form" novalidate>
-        <input type="hidden" name="segment" value="personal">
-        <input name="contact" required maxlength="120" placeholder="@ник, почта или телефон" aria-label="Контакт">
-        <button class="btn" type="submit">Хочу доступ</button>
-        <label class="hp" aria-hidden="true">Сайт <input name="website" tabindex="-1" autocomplete="off"></label>
-        <label class="consent consent--quick"><input type="checkbox" name="consent" required checked>
-          <span>Согласен с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></span></label>
-        <p class="form__error" role="alert" hidden></p>
-      </form>
-      <div class="thanks" id="thanks" hidden>
-        <div class="thanks__ico">✓</div>
-        <h3>Готово!</h3>
-        <p>Спасибо<span id="thanks-name"></span>! Напишем вам 11 ноября.</p>
-      </div>
+  <div class="narrow quick">
+    <h2>Получите Тайлера первым</h2>
+    <p class="lead">Оставьте Telegram или почту — пришлём доступ 11 ноября.</p>
+    <form class="quick__form" id="preorder-form" novalidate>
+      <input type="hidden" name="segment" value="personal">
+      <input name="contact" required maxlength="120" placeholder="@ник, почта или телефон" aria-label="Контакт">
+      <button class="btn" type="submit" style="height:44px">Хочу доступ</button>
+      <label class="hp" aria-hidden="true">Сайт <input name="website" tabindex="-1" autocomplete="off"></label>
+      <label class="consent consent--quick"><input type="checkbox" name="consent" required checked>
+        <span>Согласен с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></span></label>
+      <p class="form__error" role="alert" hidden></p>
+    </form>
+    <div class="thanks" id="thanks" hidden>
+      <div class="thanks__ico">✓</div>
+      <h3>Готово</h3>
+      <p>Спасибо<span id="thanks-name"></span>! Напишем вам 11 ноября.</p>
     </div>
   </div>
 </section>
-<!-- ─── Вопросы ─── -->
-<section class="section section--alt" id="faq">
-  <div class="wrap faq">
-    <h2>Вопросы</h2>
-    <details><summary>Когда запуск?</summary><p>11 ноября. Сейчас идёт предзаказ: мы собираем заявки, чтобы первыми запустить самые нужные шаблоны. Описание и цены на сайте предварительные.</p></details>
-    <details><summary>Какие нейросети внутри?</summary><p>GPT, Claude, Gemini, DeepSeek и другие — с оплатой в рублях по подписке. Если у вас есть ключ DeepSeek, можно работать на нём.</p></details>
-    <details><summary>Где хранятся данные клиентов?</summary><p>На серверах в России. Заявки и заказы выгружаются к вам — в таблицы, CRM или 1С.</p></details>
-    <details><summary>Чем Тайлер лучше ChatGPT или Алисы?</summary><p>Лучшие модели мира в одном приложении без VPN и зарубежных карт, плюс живой голосовой разговор. Тайлер ищет в интернете со ссылками на источники и помнит контекст разговора.</p></details>
-    <details><summary>Как оплатить?</summary><p>Картой российского банка или через СБП. Подписку можно отключить в один клик. Тариф «Старт» бесплатный.</p></details>
+
+<section class="section">
+  <div class="narrow faq">
+    <h2 style="margin-bottom:32px">Вопросы</h2>
+    <details><summary>Когда запуск?</summary><p>11 ноября. Сейчас идёт предзаказ — описание и цены предварительные.</p></details>
+    <details><summary>Чем Тайлер лучше ChatGPT?</summary><p>Те же модели, но без VPN и зарубежной карты, плюс команда агентов, которая работает с вашими файлами, командами и GitHub — с вашего разрешения.</p></details>
+    <details><summary>Он может что-то сломать у меня на компьютере?</summary><p>Тайлер видит только папки, которые вы разрешили. Запись файлов и любые команды — только после вашего «Разрешить» в чате.</p></details>
+    <details><summary>Где хранятся мои данные?</summary><p>Файлы остаются на вашем компьютере. Переписка обрабатывается на серверах в России.</p></details>
+    <details><summary>Как оплатить?</summary><p>Картой российского банка или через СБП. Подписку можно отключить в один клик. «Старт» — бесплатно.</p></details>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap crosslink">
+    <div><h2>Для бизнеса</h2><p>Опишите словами — Тайлер станет администратором, менеджером или поддержкой: звонки, Telegram, VK, сайт.</p></div>
+    <a class="btn btn--ghost" href="business.html" data-goal="to_business">TylerAgent для бизнеса →</a>
   </div>
 </section>
 
@@ -272,7 +178,7 @@
   </div>
 </footer>
 
-<a class="sticky-cta btn" href="#preorder" data-goal="cta_sticky">Оставить предзаказ</a>
+<a class="sticky-cta btn" href="#preorder" data-goal="cta_sticky">Хочу доступ</a>
 
 <script src="config.js"></script>
 <script src="app.js"></script>
